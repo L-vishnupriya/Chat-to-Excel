@@ -5,7 +5,7 @@ import sqlite3
 import google.generativeai as genai
 
 # Configure Gemini API directly
-genai.configure(api_key="AIzaSyCoa_o0WM6Y_Bt3LTd76kklfIAjHsgiTIs")
+genai.configure(api_key="")
 
 st.set_page_config(page_title="Chat to SQL Analyst", layout="wide")
 st.title("Chat to Excel")
@@ -84,3 +84,4 @@ if uploaded_file:
                     st.warning("Chart view supports only 2-column results.")
         except Exception as e:
             st.error(f" SQL execution error: {e}")
+
